@@ -23,7 +23,8 @@
                 emprego<input type="text" class="campo-nome" name="emprego-da-pessoa"><br>
                 faculdade<input type="text" class="campo-nome" name="faculdade-da-pessoa"><br>
                 <button>Criar resumo</button>
-            </form>            
+            </form>
+            <?php ?>
         </section>
         <footer class="rodape">
         </footer>
