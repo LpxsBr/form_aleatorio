@@ -25,7 +25,6 @@
                 <button>Criar resumo</button>
             </form>            
         </section>
-        </section>
         <footer class="rodape">
         </footer>
     </div>
