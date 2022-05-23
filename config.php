@@ -11,6 +11,7 @@ $emprego_pessoa = $_POST["emprego-da-pessoa"];
 
 // var_dump($idade);
 
+
 //teste de "setagem"
 if($nome_pessoa and $data_nascimento and ($facul_pessoa or $emprego_pessoa)){
 
