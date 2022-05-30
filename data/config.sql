@@ -1,6 +1,8 @@
 -- ESTAPA 1
 create database 'formDB'
 -- ETAPA 2
+use 'formDB'
+
 create into formDB table form1(
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     NOME VARCHAR(40) NOT NULL,
