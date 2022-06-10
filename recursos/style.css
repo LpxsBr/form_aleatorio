@@ -1,9 +1,31 @@
 
 *, body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
-.container{
-    display: grid;
+.paidomeio{
+    display: flex;
+    justify-content: center;
+}
+.meio{
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+}
+h5{
+    margin: 5px;
 }
 input{
-    margin: 10px;
+    display: block;
+    margin: 0px auto;
+}
+button{
+    margin: 20px;
+    background-color: rgb(107, 208, 221);
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+button:hover{
+    background-color: rgb(88, 168, 179);
+}
