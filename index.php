@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <!--
     form
     started in 21/05/2022.
