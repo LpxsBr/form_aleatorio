@@ -1,5 +1,8 @@
 <?php
 
+
+include('index.php');
+
 //testando o require do index.php
 // require_once('index.php');
 $nome_pessoa = $_POST["nome-da-pessoa"];
@@ -18,7 +21,7 @@ if($nome_pessoa and $data_nascimento and ($facul_pessoa or $emprego_pessoa)){
     // conexão do banco de dados via PDO
 try {
     $conect = new PDO("mysql:dbname=formdb; host=localhost", "root", "");
-    echo '<br>'.'deu bom';
+    // echo '<br>'.'deu bom';
 } catch (PDOException $e) {
     echo '<br>'.'deu ruim'.$e->getMessage();
 }
@@ -35,7 +38,10 @@ try {
     $stmt->bindparam(':c',$emprego_pessoa);
     $stmt->bindparam(':d',$facul_pessoa);
     $stmt->execute();
+    echo('Enviado!');
 } catch (PDOException $e) {
 
     echo "<br>".$e->getMessage();
-}}
+}}else{
+    echo('por favor, preencha os campos!');
+}
